@@ -67,3 +67,18 @@ nav a {
 p {
   color: #555;
 }
+
+.col-2 a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  background: #5895d3;
+  color: white;
+  border-radius: 30px;
+  margin-top: 25px;
+}
+
+.header-section {
+  margin-top: -20px;
+  background: radial-gradient(#fff, #eaf2fb);
+}
