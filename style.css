@@ -38,11 +38,14 @@ nav ul li {
 nav a {
   text-decoration: none;
   color: #555;
-  transition: all 0.5s;
+  transition: transform 0.5s;
 }
 
 nav a:hover {
-  color: #1f72c6;
+  color: #f2f5f7;
+  background: #1f72c6;
+  padding: 10px 15px;
+  border-radius: 15px;
 }
 
 .container {
@@ -112,7 +115,7 @@ p {
 .col-3 img {
   width: 100%;
   border-radius: 5px;
-  border: 1px solid #021e39;
+  border: 2px solid #1d466d;
 }
 
 .container h2 {
@@ -128,16 +131,26 @@ p {
   flex-basis: 25%;
   min-width: 200px;
   padding: 15px;
+  transition: transform 0.3s;
 }
 
 .col-4 img {
   width: 100%;
   border-radius: 5px;
-  border: 1px solid #021e39;
+  border: 2px solid #1d466d;
+  cursor: pointer;
 }
 
 .col-4 h3 {
-  color: #444;
+  color: #2f09ee;
   font-size: 1rem;
   font-weight: 600;
+}
+
+.col-4:hover {
+  transform: translateY(-10px);
+}
+
+.rating .fa {
+  color: #1f72c6;
 }
