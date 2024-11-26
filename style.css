@@ -34,6 +34,10 @@ nav a {
   color: #555;
 }
 
+nav a:hover {
+  color: #5895d3;
+}
+
 .container {
   max-width: 1200px;
   margin: 20px auto;
@@ -76,6 +80,11 @@ p {
   color: white;
   border-radius: 30px;
   margin-top: 25px;
+  transition: background 0.3s;
+}
+
+.col-2 a:hover {
+  background: #1f72c6;
 }
 
 .header-section {
