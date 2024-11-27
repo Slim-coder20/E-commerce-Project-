@@ -191,6 +191,7 @@ p {
   padding: 40px 20px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
+
   transition: transform 0.5s;
 }
 
@@ -216,4 +217,19 @@ p {
 .testimonial .col-3 h3 {
   font-size: 18px;
   color: #725ae7;
+}
+
+/* Section Brands - Marques  */
+
+section .brands {
+  margin: 70px 0;
+}
+
+.brands .col-5 {
+  flex-basis: 20%;
+  min-width: 120px;
+}
+
+.brands .col-5 img {
+  width: 100%;
 }
