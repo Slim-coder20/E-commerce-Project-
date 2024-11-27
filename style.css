@@ -271,8 +271,10 @@ section .brands {
   justify-content: center;
   padding: 15px;
 }
-.footer-col-2 img {
-  width: 185px;
+.footer-col-2 .wl {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 .footer-col-2 p {
   text-align: center;
@@ -305,8 +307,6 @@ a {
 
 .footer hr {
   border: none;
-  height: 1px;
-  background: #8a8a8a;
   margin: 20px 0;
 }
 
