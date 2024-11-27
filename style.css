@@ -316,8 +316,25 @@ a {
 
 .menu-icon {
   margin-left: 15px;
-  display: none;
+  /* display: none; */
   cursor: pointer;
 }
 
 /*  la partie responsive du site  */
+
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #000;
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+  }
+}
