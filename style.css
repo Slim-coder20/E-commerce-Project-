@@ -142,7 +142,7 @@ p {
 }
 
 .col-4 h3 {
-  color: #2f09ee;
+  color: #725ae7;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -153,4 +153,29 @@ p {
 
 .rating .fa {
   color: #79a9da;
+}
+
+/* Section Offre Exclusive */
+
+/* .col-2 .offre-img {
+  width: 100%;
+} */
+
+.offre-exclusive {
+  margin: 70px 0;
+  padding: 20px;
+  background: radial-gradient(#fff, #79a9da);
+}
+
+.col-2 .offre-img {
+  width: 90%;
+  padding: 50px;
+}
+
+.col-2 small {
+  color: #555;
+}
+
+.col-2 h1 {
+  color: #725ae7;
 }
