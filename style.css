@@ -232,4 +232,12 @@ section .brands {
 
 .brands .col-5 img {
   width: 100%;
+  padding: 25px;
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+
+.brands .col-5 img:hover {
+  cursor: pointer;
+  filter: grayscale(0);
 }
