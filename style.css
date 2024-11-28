@@ -28,6 +28,7 @@ nav {
 nav ul {
   display: inline-block;
   list-style-type: none;
+  overflow: hidden;
 }
 
 nav ul li {
@@ -316,7 +317,7 @@ a {
 
 .menu-icon {
   margin-left: 15px;
-  /* display: none; */
+  display: none;
   cursor: pointer;
 }
 
@@ -327,7 +328,7 @@ a {
     position: absolute;
     top: 70px;
     left: 0;
-    background: #000;
+    background: #79a9da;
     width: 100%;
     padding: 10px 0;
     overflow: hidden;
@@ -336,5 +337,19 @@ a {
 
   nav ul li {
     display: block;
+    margin-right: 50px;
+  }
+
+  nav a {
+    color: #fff;
+  }
+
+  nav a:hover {
+    color: #a295e5;
+    background: none;
+  }
+
+  .menu-icon {
+    display: inline-block;
   }
 }
