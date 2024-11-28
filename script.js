@@ -1,3 +1,4 @@
+// parametrage du menu hamburger responsive 
 
 const menuItems = document.getElementById('menuItems');
 
@@ -14,3 +15,4 @@ const menuItems = document.getElementById('menuItems');
             }
         }
  
+        

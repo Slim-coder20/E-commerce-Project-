@@ -28,7 +28,7 @@ nav {
 nav ul {
   display: inline-block;
   list-style-type: none;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 nav ul li {
@@ -345,11 +345,31 @@ a {
   }
 
   nav a:hover {
-    color: #a295e5;
+    color: #3b17f0;
     background: none;
   }
 
   .menu-icon {
     display: inline-block;
+  }
+}
+
+/*  Responsive pour les écrans inférieur à 600 px  */
+
+@media only screen and (max-width: 600px) {
+  .row {
+    text-align: center;
+  }
+
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5 {
+    flex-basis: 100%;
+  }
+  .col-2 h1 {
+    font-size: 45px;
+    line-height: 60px;
+    margin: 25px 0;
   }
 }
