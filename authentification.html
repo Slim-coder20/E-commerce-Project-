@@ -2,68 +2,83 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bproo Store Dev - Design d'un site de ecommerce</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <title>E-Commerce Site</title>
   </head>
-  <!-- Section Header  -->
   <body>
     <section class="header-section">
       <div class="container">
-        <header>
-          <div class="navbar">
-            <div class="logo">
-              <img src="./Images/Logo E-commerce.png" alt="Logo" />
-            </div>
-            <nav>
-              <ul id="menuItems">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Produits</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Accounts</a></li>
-              </ul>
-              <img
-                src="./Images/cart.png"
-                width="25px"
-                alt="icon pannier"
-                class="cart-icon"
-              />
-              <img
-                src="./Images/Vector - 1.png"
-                alt="menu"
-                width="26px"
-                onclick="toogleButton()"
-                class="menu-icon"
-              />
-            </nav>
+        <header class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="./Images/Logo E-commerce.png"
+                alt="logo shooping sport"
+            /></a>
           </div>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="index.html">Acceuil</a></li>
+              <li><a href="produits.html">Produits</a></li>
+              <li><a href="about.html">Apropos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="authentification.html">Mon compte</a></li>
+            </ul>
+            <a href="panier.html"
+              ><img
+                src="images/cart.png"
+                alt="Cart icon"
+                width="26px"
+                class="cart-icon"
+            /></a>
+            <img
+              src="images/menu.png"
+              alt="menu"
+              width="26px"
+              class="menu-icon"
+              onclick="toogleButton()"
+            />
+          </nav>
         </header>
+
         <div class="row">
           <div class="col-2">
-            <img src="./Images/image1.png" alt="image foot" />
+            <img src="images/image1.png" alt="landing image" />
           </div>
           <div class="col-2">
             <div class="form-container">
               <div class="form-button">
-                <span>Connexion</span>
-                <span>Inscription</span>
+                <span onclick="connexionFonction()">Connexion</span>
+                <span onclick="inscriptionFonction()">Inscription</span>
+                <hr id="Indicateur" />
               </div>
+              <form id="Connexion">
+                <input type="email" placeholder="votre email" />
+                <input type="password" placeholder="votre mot de passe" />
+                <input type="submit" value="Connexion" class="form-btn" />
+                <a href="">mot de passe oublier?</a>
+              </form>
+              <form id="Inscription">
+                <input type="text" placeholder="votre nom" />
+                <input type="email" placeholder="votre email" />
+                <input type="password" placeholder="votre mot de passe" />
+                <input type="submit" value="Inscription" class="form-btn" />
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- footer  de la page  -->
-
+    <!-- footer de la page -->
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -73,13 +88,16 @@
               Téléchargez l'application pour téléphone mobile Android et ios
             </p>
             <div class="app-logo">
-              <img src="images/play-store.png" alt="android app image" />
-              <img src="images/app-store.png" alt="ios app image" />
+              <img src="images/play-store.png" alt="android app" />
+              <img src="images/app-store.png" alt="ios app" />
             </div>
           </div>
           <div class="footer-col-2">
             <div class="wl">
-              <img src="images/Logo E-commerce.png" alt="Shooping sport logo" />
+              <img
+                src="./Images/Logo E-commerce.png"
+                alt="logo shooping sport"
+              />
             </div>
             <p>
               Notre objectif est de rendre durablement le plaaisir et les
@@ -106,9 +124,44 @@
           </div>
         </div>
         <hr />
-        <p class="copyright">&copy; Shoping Sport dev 2024</p>
+        <p class="copyright">&copy; bproo dev 2021</p>
       </div>
     </footer>
-    <script src="./script.js"></script>
+
+    <!-- javascript code -->
+    <script>
+      var menuItems = document.getElementById("menuItems");
+
+      menuItems.style.maxHeight = "0px";
+      menuItems.style.padding = "0px";
+
+      function toogleButton() {
+        if (menuItems.style.maxHeight == "0px") {
+          menuItems.style.maxHeight = "200px";
+          menuItems.style.padding = "15px";
+        } else {
+          menuItems.style.maxHeight = "0px";
+          menuItems.style.padding = "0px";
+        }
+      }
+    </script>
+    <!-- script code pour le form toggle -->
+    <script>
+      var connexion = document.getElementById("Connexion");
+      var inscription = document.getElementById("Inscription");
+      var indicateur = document.getElementById("Indicateur");
+
+      function connexionFonction() {
+        connexion.style.transform = "translateX(300px)";
+        inscription.style.transform = "translateX(300px)";
+        indicateur.style.transform = "translateX(0px)";
+      }
+
+      function inscriptionFonction() {
+        connexion.style.transform = "translateX(0px)";
+        inscription.style.transform = "translateX(0px)";
+        indicateur.style.transform = "translateX(130px)";
+      }
+    </script>
   </body>
 </html>
