@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>E-Commerce Site</title>
+  </head>
+  <!-- Section Header  -->
+  <body>
+    <section class="header-section">
+      <div class="container">
+        <header>
+          <div class="navbar">
+            <div class="logo">
+              <img src="./Images/Logo E-commerce.png" alt="Logo" />
+            </div>
+            <nav>
+              <ul id="menuItems">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Accounts</a></li>
+              </ul>
+              <img
+                src="./Images/cart.png"
+                width="25px"
+                alt="icon pannier"
+                class="cart-icon"
+              />
+              <img
+                src="./Images/Vector - 1.png"
+                alt="menu"
+                width="26px"
+                onclick="toogleButton()"
+                class="menu-icon"
+              />
+            </nav>
+          </div>
+        </header>
+        <div class="row">
+          <div class="col-2">
+            <img src="./Images/image1.png" alt="image foot" />
+          </div>
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-button">
+                <span>Connexion</span>
+                <span>Inscription</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  de la page  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Téléchargez notre appli</h3>
+            <p>
+              Téléchargez l'application pour téléphone mobile Android et ios
+            </p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="android app image" />
+              <img src="images/app-store.png" alt="ios app image" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <div class="wl">
+              <img src="images/Logo E-commerce.png" alt="Shooping sport logo" />
+            </div>
+            <p>
+              Notre objectif est de rendre durablement le plaaisir et les
+              bienfaits du sport accessible a tous.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Liens utiles</h3>
+            <ul>
+              <li><a href="">Coupons</a></li>
+              <li><a href="">Article de blog</a></li>
+              <li><a href="">Politique de retour</a></li>
+              <li><a href="">Rejoignez l'affiliation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Suivez Nous</h3>
+            <ul>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">&copy; Shoping Sport dev 2024</p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
